@@ -2,7 +2,7 @@ use super::fuzz_param_from_state;
 use crate::{
     executor::StateChangeset,
     fuzz::invariant::{ArtifactFilters, FuzzRunIdentifiedContracts},
-    utils::{self},
+    utils,
 };
 use bytes::Bytes;
 use ethers::{
@@ -15,7 +15,7 @@ use parking_lot::RwLock;
 use proptest::prelude::{BoxedStrategy, Strategy};
 use revm::{
     db::{CacheDB, DatabaseRef},
-    opcode, spec_opcode_gas, SpecId,
+    primitives::{opcode, spec_opcode_gas, SpecId},
 };
 use std::{
     collections::BTreeSet,
@@ -197,7 +197,7 @@ fn collect_push_bytes(code: Bytes) -> Vec<[u8; 32]> {
             // As a precaution, if a fuzz test deploys malformed bytecode (such as using `CREATE2`)
             // this will terminate the loop early.
             if push_start > code.len() || push_end > code.len() {
-                return bytes
+                return bytes;
             }
 
             bytes.push(U256::from_big_endian(&code[push_start..push_end]).into());

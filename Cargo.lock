@@ -167,7 +167,7 @@ dependencies = [
  "keccak-hasher",
  "open-fastrlp",
  "reference-trie",
- "revm",
+ "revm 2.3.1",
  "serde",
  "serde_json",
  "triehash",
@@ -779,7 +779,7 @@ dependencies = [
  "once_cell",
  "regex",
  "reqwest",
- "revm",
+ "revm 2.3.1",
  "rustyline",
  "semver",
  "serde",
@@ -1797,6 +1797,17 @@ dependencies = [
 ]
 
 [[package]]
+name = "enumn"
+version = "0.1.6"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "e88bcb3a067a6555d577aba299e75eff9942da276e6506fc6274327daa026132"
+dependencies = [
+ "proc-macro2",
+ "quote",
+ "syn",
+]
+
+[[package]]
 name = "env_logger"
 version = "0.10.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2609,7 +2620,8 @@ dependencies = [
  "ordered-float",
  "parking_lot 0.12.1",
  "proptest",
- "revm",
+ "revm 3.0.0",
+ "ruint",
  "semver",
  "serde",
  "serde_json",
@@ -3268,6 +3280,12 @@ checksum = "7f24254aa9a54b5c858eaee2f5bccdb46aaf0e486a595ed5fd8f86ba55232a70"
 dependencies = [
  "serde",
 ]
+
+[[package]]
+name = "hex-literal"
+version = "0.3.4"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "7ebdb29d2ea9ed0083cd8cece49bbd968021bd99b0849edb4a9a7ee0fdf6a4e0"
 
 [[package]]
 name = "hidapi-rusb"
@@ -5316,6 +5334,67 @@ dependencies = [
 ]
 
 [[package]]
+name = "revm"
+version = "3.0.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "284747ad0324ed0e805dcf8f412e2beccb7a547fbd84f0607865001b8719c515"
+dependencies = [
+ "auto_impl 1.0.1",
+ "revm-interpreter",
+ "revm-precompile",
+ "serde",
+]
+
+[[package]]
+name = "revm-interpreter"
+version = "1.0.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "db1b86f1d21d1852b40ec8ac9b6d31ac8a7c000875155809d41ce68f6369dc56"
+dependencies = [
+ "derive_more",
+ "enumn",
+ "revm-primitives",
+ "serde",
+ "sha3",
+]
+
+[[package]]
+name = "revm-precompile"
+version = "2.0.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "66837781605c6dcb7f07ad87604eeab3119dae9149d69d8839073dd6f188673d"
+dependencies = [
+ "k256",
+ "num",
+ "once_cell",
+ "revm-primitives",
+ "ripemd",
+ "sha2 0.10.6",
+ "sha3",
+ "substrate-bn",
+]
+
+[[package]]
+name = "revm-primitives"
+version = "1.0.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "ad165d3f69e4d14405d82c6625864ee48c162dcebdf170322e6dd80398226a9e"
+dependencies = [
+ "auto_impl 1.0.1",
+ "bytes",
+ "derive_more",
+ "enumn",
+ "fixed-hash",
+ "hashbrown 0.13.2",
+ "hex",
+ "hex-literal",
+ "rlp",
+ "ruint",
+ "serde",
+ "sha3",
+]
+
+[[package]]
 name = "revm_precompiles"
 version = "1.1.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -5410,6 +5489,27 @@ dependencies = [
  "libc",
  "winapi",
 ]
+
+[[package]]
+name = "ruint"
+version = "1.7.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "0ad3a104dc8c3867f653b0fec89c65e00b0ceb752718ad282177a7e0f33257ac"
+dependencies = [
+ "derive_more",
+ "primitive-types",
+ "rlp",
+ "ruint-macro",
+ "rustc_version",
+ "serde",
+ "thiserror",
+]
+
+[[package]]
+name = "ruint-macro"
+version = "1.0.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "62cc5760263ea229d367e7dff3c0cbf09e4797a125bd87059a6c095804f3b2d1"
 
 [[package]]
 name = "rusb"
@@ -6908,7 +7008,7 @@ dependencies = [
  "eyre",
  "forge",
  "hex",
- "revm",
+ "revm 2.3.1",
  "tui",
 ]
 
