@@ -5443,7 +5443,6 @@ dependencies = [
 [[package]]
 name = "revm"
 version = "2.3.1"
-source = "git+https://github.com/Sunscreen-tech/revm?branch=v2.3-hack#d6f386abf13f92ab27bdc079878827200505450e"
 dependencies = [
  "arrayref",
  "auto_impl 1.0.1",
@@ -5461,7 +5460,6 @@ dependencies = [
 [[package]]
 name = "revm_precompiles"
 version = "1.1.2"
-source = "git+https://github.com/Sunscreen-tech/revm?branch=v2.3-hack#d6f386abf13f92ab27bdc079878827200505450e"
 dependencies = [
  "bytes",
  "hashbrown 0.13.2",
