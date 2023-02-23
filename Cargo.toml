@@ -70,4 +70,5 @@ codegen-units = 1
 # ethers-solc = { path = "../ethers-rs/ethers-solc" }
 
 [patch.crates-io]
-revm = { git = "https://github.com/Sunscreen-tech/revm", branch = "v2.3-hack" }
+revm = { path = "../revm/crates/revm" }
+#revm = { git = "https://github.com/Sunscreen-tech/revm", branch = "v2.3-hack" }
