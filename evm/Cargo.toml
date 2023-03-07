@@ -44,7 +44,8 @@ revm = { version = "2.3", default-features = false, features = [
   "with-serde",
   "memory_limit",
   "optional_eip3607",
-  "optional_block_gas_limit"
+  "optional_block_gas_limit",
+  "no_gas_measuring"
 ] }
 
 # Fuzzer
