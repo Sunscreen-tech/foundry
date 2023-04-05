@@ -5459,7 +5459,6 @@ dependencies = [
  "bytes",
  "hashbrown 0.13.2",
  "k256 0.11.6",
- "lazy_static",
  "num",
  "once_cell",
  "primitive-types",
@@ -5469,6 +5468,7 @@ dependencies = [
  "sha3",
  "substrate-bn",
  "sunscreen",
+ "sunscreen_params",
 ]
 
 [[package]]
@@ -6402,6 +6402,14 @@ dependencies = [
  "petgraph",
  "seal_fhe",
  "serde",
+]
+
+[[package]]
+name = "sunscreen_params"
+version = "0.1.0"
+dependencies = [
+ "once_cell",
+ "sunscreen",
 ]
 
 [[package]]
