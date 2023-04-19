@@ -119,7 +119,6 @@ impl EvmOpts {
                 // If EIP-3607 is enabled it can cause issues during fuzz/invariant tests if the
                 // caller is a contract. So we disable the check by default.
                 disable_eip3607: true,
-                disable_block_gas_limit: true, // TODO make this configurable at foundry level
                 ..Default::default()
             },
             tx: TxEnv {
