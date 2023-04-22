@@ -2361,6 +2361,18 @@ dependencies = [
 ]
 
 [[package]]
+name = "fhe_precompiles"
+version = "0.1.0"
+source = "git+https://github.com/Sunscreen-tech/fhe_precompiles?rev=3cb72a7#3cb72a759b313f8c6eb0f48d4a6351a4c276f339"
+dependencies = [
+ "bincode",
+ "libc",
+ "once_cell",
+ "paste",
+ "sunscreen",
+]
+
+[[package]]
 name = "figment"
 version = "0.10.8"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -4727,6 +4739,12 @@ dependencies = [
 ]
 
 [[package]]
+name = "paste"
+version = "1.0.12"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "9f746c4065a8fa3fe23974dd82f15431cc8d40779821001404d10d2e79ca7d79"
+
+[[package]]
 name = "path-slash"
 version = "0.2.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -5457,6 +5475,7 @@ version = "1.1.2"
 dependencies = [
  "bincode",
  "bytes",
+ "fhe_precompiles",
  "hashbrown 0.13.2",
  "k256 0.11.6",
  "num",
@@ -5468,7 +5487,6 @@ dependencies = [
  "sha3",
  "substrate-bn",
  "sunscreen",
- "sunscreen_params",
 ]
 
 [[package]]
@@ -6402,14 +6420,6 @@ dependencies = [
  "petgraph",
  "seal_fhe",
  "serde",
-]
-
-[[package]]
-name = "sunscreen_params"
-version = "0.1.0"
-dependencies = [
- "once_cell",
- "sunscreen",
 ]
 
 [[package]]
