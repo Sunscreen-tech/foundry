@@ -1,4 +1,4 @@
-name: deny
+name: check
 
 on:
   push:
@@ -19,5 +19,5 @@ jobs:
       - uses: actions/checkout@v3
       - uses: dtolnay/rust-toolchain@stable
       - uses: Swatinem/rust-cache@v2
-      - name: cargo test
+      - name: cargo check
         run: cargo check --workspace
