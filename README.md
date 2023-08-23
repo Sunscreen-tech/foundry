@@ -29,6 +29,14 @@ See the [installation guide](https://book.getfoundry.sh/getting-started/installa
 
 If you're experiencing any issues while installing, check out [Getting Help](#getting-help) and the [FAQ](https://book.getfoundry.sh/faq).
 
+As a quick guide, if you would like to install locally you can use the following shell commands:
+
+```sh
+cargo install --path ./crates/forge --profile local --force
+cargo install --path ./crates/anvil --profile local --force
+```
+
+
 ## Forge
 
 ### Features
