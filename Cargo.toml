@@ -158,4 +158,5 @@ solang-parser = "=0.3.1"
 
 [patch.crates-io]
 # revm = { path = "../revm/crates/revm" }
-revm = { git = "https://github.com/Sunscreen-tech/revm", branch = "sunscreen" }
+# revm = { git = "https://github.com/Sunscreen-tech/revm", branch = "sunscreen" }
+revm = { path = "../revm-sunscreen/crates/revm" }
