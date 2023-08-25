@@ -29,10 +29,10 @@ cargo install --git https://github.com/Sunscreen-tech/foundry --profile local fo
 Or, if you've already cloned down this repo, you can install from local paths:
 
 ```sh
-cargo install --path ./crates/forge --profile local --force
-cargo install --path ./crates/anvil --profile local --force
-cargo install --path ./crates/cast --profile local --force
-cargo install --path ./crates/chisel --profile local --force
+cargo install --path ./crates/forge --profile local --force --locked
+cargo install --path ./crates/anvil --profile local --force --locked
+cargo install --path ./crates/cast --profile local --force --locked
+cargo install --path ./crates/chisel --profile local --force --locked
 ```
 
 ## Documentation
