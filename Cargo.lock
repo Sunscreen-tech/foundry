@@ -2332,7 +2332,7 @@ dependencies = [
 [[package]]
 name = "fhe_precompiles"
 version = "0.1.0"
-source = "git+https://github.com/Sunscreen-tech/fhe_precompiles#1e3122047319a747b13590637c0d335080411405"
+source = "git+https://github.com/Sunscreen-tech/fhe_precompiles#4b8f9c5eeac293745d08cda60dca806589313d67"
 dependencies = [
  "bincode",
  "crypto-bigint",
@@ -5446,7 +5446,7 @@ dependencies = [
 [[package]]
 name = "revm"
 version = "3.3.0"
-source = "git+https://github.com/Sunscreen-tech/revm?branch=sunscreen#a47d9c181eb700185bf926c7f171cc64590203af"
+source = "git+https://github.com/Sunscreen-tech/revm?branch=sunscreen#f5921712818f399c4dad6f9187f0022dc4addf52"
 dependencies = [
  "auto_impl",
  "revm-interpreter",
@@ -5458,7 +5458,7 @@ dependencies = [
 [[package]]
 name = "revm-interpreter"
 version = "1.1.2"
-source = "git+https://github.com/Sunscreen-tech/revm?branch=sunscreen#a47d9c181eb700185bf926c7f171cc64590203af"
+source = "git+https://github.com/Sunscreen-tech/revm?branch=sunscreen#f5921712818f399c4dad6f9187f0022dc4addf52"
 dependencies = [
  "derive_more",
  "enumn",
@@ -5470,7 +5470,7 @@ dependencies = [
 [[package]]
 name = "revm-precompile"
 version = "2.0.3"
-source = "git+https://github.com/Sunscreen-tech/revm?branch=sunscreen#a47d9c181eb700185bf926c7f171cc64590203af"
+source = "git+https://github.com/Sunscreen-tech/revm?branch=sunscreen#f5921712818f399c4dad6f9187f0022dc4addf52"
 dependencies = [
  "fhe_precompiles",
  "k256",
@@ -5487,7 +5487,7 @@ dependencies = [
 [[package]]
 name = "revm-primitives"
 version = "1.1.2"
-source = "git+https://github.com/Sunscreen-tech/revm?branch=sunscreen#a47d9c181eb700185bf926c7f171cc64590203af"
+source = "git+https://github.com/Sunscreen-tech/revm?branch=sunscreen#f5921712818f399c4dad6f9187f0022dc4addf52"
 dependencies = [
  "auto_impl",
  "bitvec 1.0.1",
